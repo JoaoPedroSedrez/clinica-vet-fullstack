@@ -11,7 +11,7 @@ class Cachorro extends Pet
     }
 
     public function atender() {
-        return "O cachorro {$this->nome} foi atendido";
+        return "O cachorro {$this->nome} foi atendido!";
     }
 
 
