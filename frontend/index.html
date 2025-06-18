@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Clínica Vet</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <h1>Clínica Veterinária</h1>
+
+    <section>
+        <h2>Listar Atendimentos</h2>
+        <button onclick="listarAtendimentos()">Atualizar Lista</button>
+        <ul id="lista-atendimentos"></ul>
+    </section>
+
+    <section>
+        <h2>Cadastrar Atendimento</h2>
+        <form id="form-cadastrar">
+            <input type="text" name="veterinario" placeholder="Nome do veterinário" required />
+            <select name="tipo" required>
+                <option value="">Selecione o tipo</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+            <input type="text" name="nome" placeholder="Nome do pet" required />
+            <input type="number" name="idade" placeholder="Idade do pet" required />
+            <button type="submit" id="cadastrarBtn">Cadastrar</button>
+        </form>
+    </section>
+
+    <section class="limpar-historico-section">
+        <button onclick="limparHistorico()" id="excluirHistorico">Limpar Histórico</button>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

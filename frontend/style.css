@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input, button {
+    flex: 1 1 45%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 2px solid #4CAF50;
+    border-color: transparent;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fafafa;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 4px;
+}
+
+ul#lista-atendimentos li {
+    background: #fafafa;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+ul#lista-atendimentos li div {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+ul#lista-atendimentos li div strong {
+    color: #4CAF50;
+}
+
+.limpar-historico-section {
+    text-align: center;
+}
+
+/* Estilizar botão para ficar maior e com cor legal */
+#excluirHistorico {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Se quiser mudar a cor do botão ao passar o mouse */
+#excluirHistorico:hover {
+    background-color: crimson;
+}
+
+.acoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.acoes button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.acoes button:hover {
+    background: #eee;
+}
+
+li form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li form input, li form textarea {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+select {
+    flex: 1 1 45%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+}
+
+select:focus {
+    outline: 2px solid #4CAF50;
+    border-color: transparent;
+}
+.form-edicao {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-edicao label {
+    color: green;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-edicao textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.form-edicao input[type="text"],
+.form-edicao select {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+
+.form-edicao button {
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-edicao button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.form-edicao button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.form-edicao button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+.form-edicao button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+input:disabled,
+select:disabled {
+    background-color: #f0f0f0;
+    color: #777;
+    cursor: not-allowed;
+}
+
